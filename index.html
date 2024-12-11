@@ -1,663 +1,289 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Liquor Store - Free Bootstrap 4 Template by Colorlib</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,200;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<html lang="id">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+        rel="stylesheet"
+        as="style"
+        onload="this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
+    />
+    <title>Galileo Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+            background-image: url('https://i.pinimg.com/736x/82/9e/ba/829eba95b4cacde532a8d41c18035a15.jpg'); /* URL gambar */
+            background-size: cover; /* Mengatur agar gambar menutupi seluruh latar belakang */
+            background-position: center; /* Mengatur posisi gambar berada di tengah */
+            background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+            background-attachment: fixed; /* Membuat background tetap saat scroll */
+        }
+    </style>
+</head>
+<body>
+    <div class="relative flex size-full min-h-screen flex-col bg-transparent dark justify-between group/design-root overflow-x-hidden">
+        <div>
+            <div class="flex items-center bg-transparent p-4 pb-2 justify-end">
+                <div class="flex w-12 items-center justify-end">
+                    <button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+                        <div class="text-white" data-icon="ShoppingCart" data-size="24px" data-weight="regular">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                                <path d="M222.14,58.87A8,8,0,0,0,216,56H54.68L49.79,29.14A16,16,0,0,0,34.05,16H16a8,8,0,0,0,0,16h18L59.56,172.29a24,24,0,0,0,5.33,11.27,28,28,0,1,0,44.4,8.44h45.42A27.75,27.75,0,0,0,152,204a28,28,0,1,0,28-28H83.17a8,8,0,0,1-7.87-6.57L72.13,152h116a24,24,0,0,0,23.61-19.71l12.16-66.86A8,8,0,0,0,222.14,58.87ZM96,204a12,12,0,1,1-12-12A12,12,0,0,1,96,204Zm96,0a12,12,0,1,1-12-12A12,12,0,0,1,192,204Zm4-74.57A8,8,0,0,1,188.1,136H69.22L57.59,72H206.41Z"></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-
-  	<div class="wrap">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 d-flex align-items-center">
-						<p class="mb-0 phone pl-md-2">
-							<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +00 1234 567</a> 
-							<a href="#"><span class="fa fa-paper-plane mr-1"></span> youremail@email.com</a>
-						</p>
-					</div>
-					<div class="col-md-6 d-flex justify-content-md-end">
-						<div class="social-media mr-4">
-			    		<p class="mb-0 d-flex">
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
-			    		</p>
-		        </div>
-		        <div class="reg">
-		        	<p class="mb-0"><a href="#" class="mr-2">Sign Up</a> <a href="#">Log In</a></p>
-		        </div>
-					</div>
-				</div>
-			</div>
-		</div>
-    
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Liquor <span>store</span></a>
-	      <div class="order-lg-last btn-group">
-          <a href="#" class="btn-cart dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          	<span class="flaticon-shopping-bag"></span>
-          	<div class="d-flex justify-content-center align-items-center"><small>3</small></div>
-          </a>
-          <div class="dropdown-menu dropdown-menu-right">
-				    <div class="dropdown-item d-flex align-items-start" href="#">
-				    	<div class="img" style="background-image: url(images/prod-1.jpg);"></div>
-				    	<div class="text pl-3">
-				    		<h4>Bacardi 151</h4>
-				    		<p class="mb-0"><a href="#" class="price">$25.99</a><span class="quantity ml-3">Quantity: 01</span></p>
-				    	</div>
-				    </div>
-				    <div class="dropdown-item d-flex align-items-start" href="#">
-				    	<div class="img" style="background-image: url(images/prod-2.jpg);"></div>
-				    	<div class="text pl-3">
-				    		<h4>Jim Beam Kentucky Straight</h4>
-				    		<p class="mb-0"><a href="#" class="price">$30.89</a><span class="quantity ml-3">Quantity: 02</span></p>
-				    	</div>
-				    </div>
-				    <div class="dropdown-item d-flex align-items-start" href="#">
-				    	<div class="img" style="background-image: url(images/prod-3.jpg);"></div>
-				    	<div class="text pl-3">
-				    		<h4>Citadelle</h4>
-				    		<p class="mb-0"><a href="#" class="price">$22.50</a><span class="quantity ml-3">Quantity: 01</span></p>
-				    	</div>
-				    </div>
-				    <a class="dropdown-item text-center btn-link d-block w-100" href="cart.html">
-				    	View All
-				    	<span class="ion-ios-arrow-round-forward"></span>
-				    </a>
-				  </div>
+            <div class="flex justify-center pt-4">
+                <a href="next.html">
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-medium">
+                        Read Before Buying
+                    </button>
+                </a>
+            </div>
         </div>
+    </div>
 
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown04">
-              	<a class="dropdown-item" href="product.html">Products</a>
-                <a class="dropdown-item" href="product-single.html">Single Product</a>
-                <a class="dropdown-item" href="cart.html">Cart</a>
-                <a class="dropdown-item" href="checkout.html">Checkout</a>
-              </div>
-            </li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-    <!-- END nav -->
+
+
+       <!-- Categories Section -->
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Alians Premium App</h2>
+<div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+  <div class="flex items-stretch p-4 gap-3">
     
-    <div class="hero-wrap" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-center justify-content-center">
-          <div class="col-md-8 ftco-animate d-flex align-items-end">
-          	<div class="text w-100 text-center">
-	            <h1 class="mb-4">Good <span>Drink</span> for Good <span>Moments</span>.</h1>
-	            <p><a href="#" class="btn btn-primary py-2 px-4">Shop Now</a> <a href="#" class="btn btn-white btn-outline-white py-2 px-4">Read more</a></p>
+    <!-- Music Streaming Category -->
+    <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+      <!-- Link to WhatsApp -->
+      <a href="https://wa.me/6288989446496?text=%E2%94%88%E3%83%BB🌀%20Format%20monitoring%0A༮%20nama%20apps%20premium%20:%0A༮%20location%20:%20(surabaya/lamongan/denpasar)%0A༮%20merk%20hp/laptop/tv%20:%20(asus,redmi,iphone)%0A༮%20device%20:%20(laptop/hp/tv)%0A%E3%80%8C%E2%98%84%20jangan%20lupa%20ss%20bukti%20%E2%98%84%E3%80%8D" target="_blank">
+        <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+          style="background-image: url('https://images.squarespace-cdn.com/content/v1/5bd3d5bb29f2cc6e1cdc5e72/1543698159286-WPRN7N56U915VOHU54ZQ/mobile_order_icon.pngF');">
+        </div>
+      </a>
+      <p class="text-white text-base font-medium leading-normal">ORDER NOW</p>
+    </div>
+
+    <!-- Video Streaming Category -->
+    <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+      <!-- Link to WhatsApp Channel -->
+      <a href="https://whatsapp.com/channel/0029VawRfZi6xCSQTEY4nq32" target="_blank">
+        <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+          style="background-image: url('https://th.bing.com/th/id/R.3db05f40f9bfbfa4818e5f841359ac18?rik=i9uCGc2yoCWfNA&riu=http%3a%2f%2fspeedyclearance.uk%2fwp-content%2fuploads%2f2018%2f04%2fwhatsapp-icon.png&ehk=%2fGSNSk4y8vLd2qCiosXRI0WSYOth7SLdJewCXSxpcmY%3d&risl=&pid=ImgRaw&r=0');">
+        </div>
+      </a>
+      <p class="text-white text-base font-medium leading-normal">CHANNEL WA</p>
+    </div>
+
+    <!-- Editing Category -->
+    <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+      <!-- Link to Payment Page -->
+      <a href="PAYMENT.HTML">
+        <div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl flex flex-col"
+          style="background-image: url('https://th.bing.com/th/id/R.bcf7a87a1eb1a269a23ea5be133b5165?rik=RzQHlhG%2fOIqZgg&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fcash-icon-transparent%2fcash-icon-transparent-19.png&ehk=m6L%2f7%2fmq04RcBif8CszJzPJhpSZyjIo8fHwVN8s49fM%3d&risl=&pid=ImgRaw&r=0');">
+        </div>
+      </a>
+      <p class="text-white text-base font-medium leading-normal">PAYMENT</p>
+    </div>
+
+  </div>
+</div>
+
+
+      <!-- Trending Apps Section -->
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Trending apps</h2>
+<div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+  <div class="flex items-stretch p-4 gap-3">
+    
+    <!-- Netflix App -->
+    <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+      <a href="NETFLIX.HTML">
+        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+          style='background-image: url("https://jobs.netflix.com/static/images/Netflix-Social-Rectangle.png");'></div>
+      </a>
+      <div>
+        <p class="text-white text-base font-medium leading-normal">NETFLIX</p>
+        <p class="text-[#93adc8] text-sm font-normal leading-normal">klik here</p>
+      </div>
+    </div>
+    
+    <!-- TikTok App -->
+    <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+      <a href="BSTASION.HTML">
+        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+          style='background-image: url("https://th.bing.com/th/id/OIP.lugb2IMIj8t4CsjDr9TePAHaD4?rs=1&pid=ImgDetMain");'></div>
+      </a>
+      <div>
+        <p class="text-white text-base font-medium leading-normal">BSTATION</p>
+        <p class="text-[#93adc8] text-sm font-normal leading-normal">klik here</p>
+      </div>
+    </div>
+    
+    <!-- Canva App -->
+    <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+      <a href="CANVA.HTML">
+        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+          style='background-image: url("https://static.canva.com/static/images/fb_cover-1.jpg");'></div>
+      </a>
+      <div>
+        <p class="text-white text-base font-medium leading-normal">CANVA</p>
+        <p class="text-[#93adc8] text-sm font-normal leading-normal">klik here</p>
+      </div>
+    </div>
+    
+    <!-- CapCut App -->
+    <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+      <a href="CAPCUT.HTML">
+        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+          style='background-image: url("https://i.pcmag.com/imagery/reviews/00e02Ss3KiOLKE7Ivb8SQ0P-1.fit_lim.size_1200x630.v1632757092.png");'></div>
+      </a>
+      <div>
+        <p class="text-white text-base font-medium leading-normal">CAPCUT</p>
+        <p class="text-[#93adc8] text-sm font-normal leading-normal">klik here</p>
+      </div>
+    </div>
+    
+    <!-- Alight Motion App -->
+    <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+      <a href="ALIGHTMOTION.HTML">
+        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+          style='background-image: url("https://th.bing.com/th/id/OIP.Vp3RXNGRXy2LXN4zAbJ3WgAAAA?rs=1&pid=ImgDetMain");'></div>
+      </a>
+      <div>
+        <p class="text-white text-base font-medium leading-normal">ALIGHT MOTION</p>
+        <p class="text-[#93adc8] text-sm font-normal leading-normal">klik here</p>
+      </div>
+    </div>
+    
+    <!-- Viu App -->
+    <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+      <a href="VIU.HTML">
+        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+          style='background-image: url("https://moviemotion.com.my/wp-content/uploads/2020/07/viu-logo-1024x683.jpg");'></div>
+      </a>
+      <div>
+        <p class="text-white text-base font-medium leading-normal">VIU</p>
+        <p class="text-[#93adc8] text-sm font-normal leading-normal">klik here</p>
+      </div>
+    </div>
+    
+    <!-- Disney App -->
+    <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+      <a href="DISNEY.HTML">
+        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+          style='background-image: url("https://th.bing.com/th/id/OIP.dlGwvmrP3v83SyDlMbVQhwHaEI?rs=1&pid=ImgDetMain");'></div>
+      </a>
+      <div>
+        <p class="text-white text-base font-medium leading-normal">DISNEY</p>
+        <p class="text-[#93adc8] text-sm font-normal leading-normal">klik here</p>
+      </div>
+    </div>
+    
+    <!-- Remini App -->
+    <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+      <a href="REMINI.HTML">
+        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+          style='background-image: url("https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/bf/cd/de/bfcdde13-f15a-84be-afaa-78e6c5b7fd57/AppIcon-1x_U007epad-85-220.png/1200x630wa.png");'></div>
+      </a>
+      <div>
+        <p class="text-white text-base font-medium leading-normal">REMINI</p>
+        <p class="text-[#93adc8] text-sm font-normal leading-normal">klik here</p>
+      </div>
+    </div>
+
+    <!-- PicsArt App -->
+    <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+      <a href="PICSART.HTML">
+        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+          style='background-image: url("https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/40/8c/7d/408c7dd1-7c8f-4790-3573-3a08d1ee204b/AppIcon-0-1x_U007emarketing-0-7-0-sRGB-85-220.png/1200x630wa.png");'></div>
+      </a>
+      <div>
+        <p class="text-white text-base font-medium leading-normal">PICSART</p>
+        <p class="text-[#93adc8] text-sm font-normal leading-normal">klik here</p>
+      </div>
+    </div>
+
+    <!-- WeTV App -->
+    <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+      <a href="WETV.HTML">
+        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+          style='background-image: url("https://www.asiaone.com/sites/default/files/original_images/Jan2022/wetv-black.jpg");'></div>
+      </a>
+      <div>
+        <p class="text-white text-base font-medium leading-normal">WETV</p>
+        <p class="text-[#93adc8] text-sm font-normal leading-normal">klik here</p>
+      </div>
+    </div>
+
+    <!-- Vidio Platinum App -->
+    <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+      <a href="VIDIO.HTML">
+        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+          style='background-image: url("https://ruber.id/wp-content/uploads/2023/08/Aplikasi-Vidio.jpg");'></div>
+      </a>
+      <div>
+        <p class="text-white text-base font-medium leading-normal">VIDIO PLATINUM</p>
+        <p class="text-[#93adc8] text-sm font-normal leading-normal">klik here</p>
+      </div>
+    </div>
+
+    <!-- Loklok App -->
+    <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+      <a href="LOKLOK.HTML">
+        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+          style='background-image: url("https://th.bing.com/th/id/OIP.4-SAo4xFyjrzPiLB8i5sQAHaD4?w=1200&h=630&rs=1&pid=ImgDetMain");'></div>
+      </a>
+      <div>
+        <p class="text-white text-base font-medium leading-normal">LOKLOK</p>
+        <p class="text-[#93adc8] text-sm font-normal leading-normal">klik here</p>
+      </div>
+    </div>
+
+    <!-- Apple Music App -->
+    <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
+      <a href="APPLEMUSIC.HTML">
+        <div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
+          style='background-image: url("https://9to5mac.com/wp-content/uploads/sites/6/2021/08/apple-music-logo-2021-9to5mac.jpg?resize=1024");'></div>
+      </a>
+      <div>
+        <p class="text-white text-base font-medium leading-normal">APPLE MUSIC</p>
+        <p class="text-[#93adc8] text-sm font-normal leading-normal">klik here</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <section class="ftco-intro">
-    	<div class="container">
-    		<div class="row no-gutters">
-    			<div class="col-md-4 d-flex">
-    				<div class="intro d-lg-flex w-100 ftco-animate">
-    					<div class="icon">
-    						<span class="flaticon-support"></span>
-    					</div>
-    					<div class="text">
-    						<h2>Online Support 24/7</h2>
-    						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4 d-flex">
-    				<div class="intro color-1 d-lg-flex w-100 ftco-animate">
-    					<div class="icon">
-    						<span class="flaticon-cashback"></span>
-    					</div>
-    					<div class="text">
-    						<h2>Money Back Guarantee</h2>
-    						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4 d-flex">
-    				<div class="intro color-2 d-lg-flex w-100 ftco-animate">
-    					<div class="icon">
-    						<span class="flaticon-free-delivery"></span>
-    					</div>
-    					<div class="text">
-    						<h2>Free Shipping &amp; Return</h2>
-    						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-
-    <section class="ftco-section ftco-no-pb">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 img img-3 d-flex justify-content-center align-items-center" style="background-image: url(images/about.jpg);">
-					</div>
-					<div class="col-md-6 wrap-about pl-md-5 ftco-animate py-5">
-	          <div class="heading-section">
-	          	<span class="subheading">Since 1905</span>
-	            <h2 class="mb-4">Desire Meets A New Taste</h2>
-
-	            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-	            <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
-	            <p class="year">
-	            	<strong class="number" data-number="115">0</strong>
-		            <span>Years of Experience In Business</span>
-	            </p>
-	          </div>
-
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="ftco-section ftco-no-pb">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-2 col-md-4 ">
-						<div class="sort w-100 text-center ftco-animate">
-							<div class="img" style="background-image: url(images/kind-1.jpg);"></div>
-							<h3>Brandy</h3>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-4 ">
-						<div class="sort w-100 text-center ftco-animate">
-							<div class="img" style="background-image: url(images/kind-2.jpg);"></div>
-							<h3>Gin</h3>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-4 ">
-						<div class="sort w-100 text-center ftco-animate">
-							<div class="img" style="background-image: url(images/kind-3.jpg);"></div>
-							<h3>Rum</h3>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-4 ">
-						<div class="sort w-100 text-center ftco-animate">
-							<div class="img" style="background-image: url(images/kind-4.jpg);"></div>
-							<h3>Tequila</h3>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-4 ">
-						<div class="sort w-100 text-center ftco-animate">
-							<div class="img" style="background-image: url(images/kind-5.jpg);"></div>
-							<h3>Vodka</h3>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-4 ">
-						<div class="sort w-100 text-center ftco-animate">
-							<div class="img" style="background-image: url(images/kind-6.jpg);"></div>
-							<h3>Whiskey</h3>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</section>
-
-		<section class="ftco-section">
-			<div class="container">
-				<div class="row justify-content-center pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">Our Delightful offerings</span>
-            <h2>Tastefully Yours</h2>
-          </div>
-        </div>
-				<div class="row">
-					<div class="col-md-3 d-flex">
-						<div class="product ftco-animate">
-							<div class="img d-flex align-items-center justify-content-center" style="background-image: url(images/prod-1.jpg);">
-								<div class="desc">
-									<p class="meta-prod d-flex">
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-shopping-bag"></span></a>
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-heart"></span></a>
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-visibility"></span></a>
-									</p>
-								</div>
-							</div>
-							<div class="text text-center">
-								<span class="sale">Sale</span>
-								<span class="category">Brandy</span>
-								<h2>Bacardi 151</h2>
-								<p class="mb-0"><span class="price price-sale">$69.00</span> <span class="price">$49.00</span></p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 d-flex">
-						<div class="product ftco-animate">
-							<div class="img d-flex align-items-center justify-content-center" style="background-image: url(images/prod-2.jpg);">
-								<div class="desc">
-									<p class="meta-prod d-flex">
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-shopping-bag"></span></a>
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-heart"></span></a>
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-visibility"></span></a>
-									</p>
-								</div>
-							</div>
-							<div class="text text-center">
-								<span class="seller">Best Seller</span>
-								<span class="category">Gin</span>
-								<h2>Jim Beam Kentucky Straight</h2>
-								<span class="price">$69.00</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 d-flex">
-						<div class="product ftco-animate">
-							<div class="img d-flex align-items-center justify-content-center" style="background-image: url(images/prod-3.jpg);">
-								<div class="desc">
-									<p class="meta-prod d-flex">
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-shopping-bag"></span></a>
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-heart"></span></a>
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-visibility"></span></a>
-									</p>
-								</div>
-							</div>
-							<div class="text text-center">
-								<span class="new">New Arrival</span>
-								<span class="category">Rum</span>
-								<h2>Citadelle</h2>
-								<span class="price">$69.00</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 d-flex">
-						<div class="product ftco-animate">
-							<div class="img d-flex align-items-center justify-content-center" style="background-image: url(images/prod-4.jpg);">
-								<div class="desc">
-									<p class="meta-prod d-flex">
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-shopping-bag"></span></a>
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-heart"></span></a>
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-visibility"></span></a>
-									</p>
-								</div>
-							</div>
-							<div class="text text-center">
-								<span class="category">Rum</span>
-								<h2>The Glenlivet</h2>
-								<span class="price">$69.00</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-3 d-flex">
-						<div class="product ftco-animate">
-							<div class="img d-flex align-items-center justify-content-center" style="background-image: url(images/prod-5.jpg);">
-								<div class="desc">
-									<p class="meta-prod d-flex">
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-shopping-bag"></span></a>
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-heart"></span></a>
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-visibility"></span></a>
-									</p>
-								</div>
-							</div>
-							<div class="text text-center">
-								<span class="category">Whiskey</span>
-								<h2>Black Label</h2>
-								<span class="price">$69.00</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 d-flex">
-						<div class="product ftco-animate">
-							<div class="img d-flex align-items-center justify-content-center" style="background-image: url(images/prod-6.jpg);">
-								<div class="desc">
-									<p class="meta-prod d-flex">
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-shopping-bag"></span></a>
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-heart"></span></a>
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-visibility"></span></a>
-									</p>
-								</div>
-							</div>
-							<div class="text text-center">
-								<span class="category">Tequila</span>
-								<h2>Macallan</h2>
-								<span class="price">$69.00</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 d-flex">
-						<div class="product ftco-animate">
-							<div class="img d-flex align-items-center justify-content-center" style="background-image: url(images/prod-7.jpg);">
-								<div class="desc">
-									<p class="meta-prod d-flex">
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-shopping-bag"></span></a>
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-heart"></span></a>
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-visibility"></span></a>
-									</p>
-								</div>
-							</div>
-							<div class="text text-center">
-								<span class="category">Vodka</span>
-								<h2>Old Monk</h2>
-								<span class="price">$69.00</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 d-flex">
-						<div class="product ftco-animate">
-							<div class="img d-flex align-items-center justify-content-center" style="background-image: url(images/prod-8.jpg);">
-								<div class="desc">
-									<p class="meta-prod d-flex">
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-shopping-bag"></span></a>
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-heart"></span></a>
-										<a href="#" class="d-flex align-items-center justify-content-center"><span class="flaticon-visibility"></span></a>
-									</p>
-								</div>
-							</div>
-							<div class="text text-center">
-								<span class="category">Whiskey</span>
-								<h2>Jameson Irish Whiskey</h2>
-								<span class="price">$69.00</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-md-4">
-						<a href="product.html" class="btn btn-primary d-block">View All Products <span class="fa fa-long-arrow-right"></span></a>
-					</div>
-				</div>
-			</div>
-		</section>
-  
-    <section class="ftco-section testimony-section img" style="background-image: url(images/bg_4.jpg);">
-    	<div class="overlay"></div>
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-          	<span class="subheading">Testimonial</span>
-            <h2 class="mb-3">Happy Clients</h2>
-          </div>
-        </div>
-        <div class="row ftco-animate">
-          <div class="col-md-12">
-            <div class="carousel-testimony owl-carousel ftco-owl">
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-		
-    <section class="ftco-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">Blog</span>
-            <h2>Recent Blog</h2>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-lg-6 d-flex align-items-stretch ftco-animate">
-          	<div class="blog-entry d-flex">
-          		<a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_1.jpg');">
-              </a>
-              <div class="text p-4 bg-light">
-              	<div class="meta">
-              		<p><span class="fa fa-calendar"></span> 23 April 2020</p>
-              	</div>
-                <h3 class="heading mb-3"><a href="#">The Recipe from a Winemaker’s Restaurent</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                <a href="#" class="btn-custom">Continue <span class="fa fa-long-arrow-right"></span></a>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 d-flex align-items-stretch ftco-animate">
-          	<div class="blog-entry d-flex">
-          		<a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_2.jpg');">
-              </a>
-              <div class="text p-4 bg-light">
-              	<div class="meta">
-              		<p><span class="fa fa-calendar"></span> 23 April 2020</p>
-              	</div>
-                <h3 class="heading mb-3"><a href="#">The Recipe from a Winemaker’s Restaurent</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                <a href="#" class="btn-custom">Continue <span class="fa fa-long-arrow-right"></span></a>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 d-flex align-items-stretch ftco-animate">
-          	<div class="blog-entry d-flex">
-          		<a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_3.jpg');">
-              </a>
-              <div class="text p-4 bg-light">
-              	<div class="meta">
-              		<p><span class="fa fa-calendar"></span> 23 April 2020</p>
-              	</div>
-                <h3 class="heading mb-3"><a href="#">The Recipe from a Winemaker’s Restaurent</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                <a href="#" class="btn-custom">Continue <span class="fa fa-long-arrow-right"></span></a>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 d-flex align-items-stretch ftco-animate">
-          	<div class="blog-entry d-flex">
-          		<a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_4.jpg');">
-              </a>
-              <div class="text p-4 bg-light">
-              	<div class="meta">
-              		<p><span class="fa fa-calendar"></span> 23 April 2020</p>
-              	</div>
-                <h3 class="heading mb-3"><a href="#">The Recipe from a Winemaker’s Restaurent</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                <a href="#" class="btn-custom">Continue <span class="fa fa-long-arrow-right"></span></a>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>	
-
-    <footer class="ftco-footer">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-sm-12 col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2 logo"><a href="#">Liquor <span>Store</span></a></h2>
-              <p>Far far away, behind the word mountains, far from the countries.</p>
-              <ul class="ftco-footer-social list-unstyled mt-2">
-                <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">My Accounts</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>My Account</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Register</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Log In</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>My Order</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Information</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About us</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Catalog</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact us</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Term &amp; Conditions</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Quick Link</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>New User</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Help Center</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Report Spam</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Faq's</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">info@yourdomain.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid px-0 py-5 bg-black">
-      	<div class="container">
-      		<div class="row">
-	          <div class="col-md-12">
-		
-	            <p class="mb-0" style="color: rgba(255,255,255,.5);"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
-	  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-	          </div>
-	        </div>
-      	</div>
-      </div>
-    </footer>
-    
-  
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
-  <script src="js/main.js"></script>
-    
   </body>
 </html>
+<script>
+  function filterApps() {
+    const searchInput = document.getElementById("searchInput").value.toLowerCase();
+    const apps = document.getElementsByClassName("app-item");
+    
+    for (let i = 0; i < apps.length; i++) {
+      const appName = apps[i].querySelector("p.text-white").textContent.toLowerCase();
+      if (appName.includes(searchInput)) {
+        apps[i].style.display = "flex";
+      } else {
+        apps[i].style.display = "none";
+      }
+    }
+  }
+</script>
